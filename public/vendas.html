@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solist</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="swiper-bundle.css">
+    <link rel="stylesheet" href="variaveis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./imagens/LogoNova.png">
+  </head>
+  <style>
+    p{
+      color: #34244E;
+      font-weight: 900;
+    }
+    .comprar{
+      font-weight: 900;
+    }
+
+    #icon{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: url(./imagens/hide.png);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-top: 65.8%;
+  margin-right: 71%;
+}
+
+#icon.show{
+  background: url(./imagens/view.png);
+  cursor: pointer;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <img src="./imagens/LogoNova.png" width="200" height="100" id="logo" style="margin-left: 13%">
+
+        <ul class="nav-list">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
+          <li><a href="vendas.html">VENDAS</a></li>
+          <li><a href="novidades.html">NOVIDADES</a></li>
+          <img onclick="sairConta()" src="./imagens/IconePerfil1.png" style="height: 7%; width: 7%; margin-left: 25%; margin-top: -2.5%;" onclick="sairConta">
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="row">
+        <div class="coluna">
+          <img src="./imagens/TelecasterAmarelaVendas.png" style="width: 200px; height: 400px;">
+          <h3>Fender Telecaster Butterscotch</h3>
+          <p>R$ 1.550,00</p>
+          <input type="checkbox" id="tele"> COMPRAR
+        </div>
+        <div class="coluna">
+          <img src="./imagens/StratoRosaVendas.png" style="width: 200px; height: 400px;">
+          <h3>SQUIER Sonic® Stratocaster®</h3>
+          <p>R$ 1.450,00</p>
+          <input type="checkbox" id="stratorosa"> COMPRAR
+        </div>
+        <div class="coluna">
+          <img src="./imagens/Les PaulVendas.png" style="width: 200px; height: 400px;">
+          <h3>STRINBERG Les Paul preta</h3>
+          <p>R$ 2.500,00</p>
+          <input type="checkbox" id="lespaul"> COMPRAR
+        </div>
+        <div class="coluna">
+          <img src="./imagens/SuperStratoVendas.png" style="width: 200px; height: 400px;">
+          <h3>SOLAR Superstrato Rosa</h3>
+          <p>R$ 4.500,00</p>
+          <input type="checkbox" id="superstrato"> COMPRAR
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="coluna">
+          <img src="./imagens/ExplorerVendas.png" style="width: 200px; height: 400px;">
+          <h3>EPIPHONE Explorer verde escuro</h3>
+          <p>R$ 2.550,00</p>
+          <input type="checkbox" id="explorer"> COMPRAR
+        </div>
+        <div class="coluna">
+          <img src="./imagens/JaguarVendas.png" style="width: 200px; height: 400px;">
+          <h3>KURT COBAIN FENDER Jaguar</h3>
+          <p>R$ 8.700,00</p>
+          <input type="checkbox" id="jaguar"> COMPRAR
+        </div>
+        <div class="coluna">
+          <img src="./imagens/FlyVvendas.png" style="width: 200px; height: 400px;">
+          <h3>JACKSON FlyingV Branca</h3>
+          <p>R$ 2.700,00</p>
+          <input type="checkbox" id="flyv"> COMPRAR
+        </div>
+        <div class="coluna">
+          <img src="./imagens/SemiAcusVendas.png" style="width: 200px; height: 400px;">
+          <h3>IBANEZ Semi-Acústica pretaa</h3>
+          <p>R$ 3.950,00</p>
+          <input type="checkbox" id="semi">COMPRAR
+        </div>
+        <br>
+        <div style="display: block; margin-top: 3%;">
+
+        <h2 class="h2side">Deseja calcular o valor final de sua compra?</h2>
+
+        <button class="vaipabaixo" onclick="calculo()">CONSULTAR</button>
+
+        <h2 class="h2side">Valor:</h2>
+        <p id="valorf" style="float: left; margin-top: -4.5%; margin-left: 25%;"><p>
+
+        <h2 class="h2side">Digite sua senha para finalizar a compra:</h2>
+        
+        <form id="confirmar-form" method="post">
+          <input class="inputside" type="e-mail" id="email" name="email" required placeholder="Digite seu email">
+          <input class="inputside" type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+          <div id="icon" onclick="mostrarSenha()"></div>
+          <button class="vaipabaixo2" type="submit">CONFIRMAR</button>
+      </form>
+
+        </div>
+    </main>
+
+    <footer>
+      <img class="rodapevendas" src="./imagens/RodaPé.png">
+    </footer>
+    <script src="./js/vendas.js">
+
+
+    </script>
+
+  </body>
+</html>

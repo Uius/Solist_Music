@@ -1,0 +1,318 @@
+body{
+  background-color: #8E7F9C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    
+    
+  }
+
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #776988;
+    height: 14vh;
+    
+  }
+  
+  main {
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 120vh;
+    background-color: white;
+    background-color: #EAE6F3;
+    
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 1.5%;
+    
+    
+  }
+  
+  .nav-list li {
+    letter-spacing: 2px;
+    margin-left: 35px;
+    margin-right: 40px;
+    
+  }
+  
+  
+  
+
+  
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+
+    
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  
+  
+  
+  
+  nav{
+    margin-left: -200px;
+  }
+
+ 
+
+
+.centro{
+  
+  font-family: "Candal", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-right: -200px;
+  margin-top: -3px;
+  margin-bottom: -16px;
+  text-decoration: underline;
+  
+}
+
+
+    
+      
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3%;
+        max-width: 100%; /* Para telas menores */
+      }
+      
+      .coluna {
+        margin: 10px;
+        padding: 15px;
+        width: calc(25% - 20px); /* 4 produtos por linha */
+        box-sizing: border-box;
+        text-align: center;
+      }
+      
+      .coluna img {
+        width: 100%; /* Ajusta a imagem para ocupar 100% da largura da coluna */
+        height: auto;
+        margin-bottom: 10px;
+      }
+      
+      .coluna h3 {
+        font-size: 1.5em; /* Aumenta o tamanho do título */
+        margin: 10px 0;
+      }
+      
+      .coluna p {
+        font-size: 1.2em; /* Aumenta o tamanho do preço */
+        color: #333;
+        margin: 5px 0;
+      }
+      
+      input[type="checkbox"] {
+        margin-top: 10px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #EAE6F3;
+    }
+    
+    .carousel-container {
+        position: relative;
+        width: 100%; /* Ajuste a largura do container */
+        max-width: 2000px;
+        margin: 20px auto;
+        overflow: hidden;
+        background-color: #FBF7FF;
+        padding: 10px;
+        border: none;
+    }
+    
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 12px; /* Espaço entre as guitarras */
+    }
+    
+    .slide {
+        min-width: 230px; /* Ajuste a largura de cada item */
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    img {
+        width: -100px; /* Tamanho fixo para as imagens */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    p {
+        margin-top: 5px;
+        color: #796290;
+        font-weight: bolder;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #42274B;
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 100%;
+        z-index: 1;
+    }
+    
+    button.prev {
+        left: 5px;  /* Arruma o tamanho do botao, mas ainda n sei como ajeitar pra n ficar achatado */
+    }
+    
+    button.next {
+        right: 5px;
+    }
+    
+    button:hover {
+        background-color: #542863;
+    }
+    
+    a{
+      margin-left: 47px;
+    }
+
+  .h2side{
+    margin-left: 8.5%;
+    margin-top: 3%;
+    font-weight: 900;
+    text-align: justify;
+  }
+
+  .buttonclass{
+    color: #46C43B;
+  }
+
+  .vaipabaixo{
+    margin-top: 51.4%;
+    margin-left: 32.5%;
+    border-radius: 10px;
+    color: white;
+    background-color: #46C43B;
+    font-weight: bolder;
+    font-size: 20px;
+    
+  }
+  .vaipabaixo2{
+    margin-top: 58.3%;
+    margin-left: 3%;
+    border-radius: 10px;
+    color: white;
+    background-color: #472e54;
+    font-weight: bolder;
+    font-size: 20px;
+    
+  }
+
+  .rodape{
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+  }
+
+  .rodapehome{
+    width: 100%;
+    height: 100%;
+    margin-top: 65%;
+  }
+
+  .rodapevendas{
+    width: 100%;
+    height: 100%;
+    margin-top: 25%;
+  }
+
+  .rodapesobre{
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+  }
+
+  .rodapenovidades{
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+  }
+ 
+ 
+ 
+
+ 
+ 
+  input[type="text"], input[type="password"], [type="e-mail"] {
+    width: 87%;
+    padding: 15px;
+    margin-top: 3%;
+    margin-left: 9%;
+    border: none;
+    color: #000000;
+  }
+
+  /*1890

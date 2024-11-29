@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solist</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="swiper-bundle.css">
+  <link rel="stylesheet" href="variaveis.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./imagens/LogoNova.png">
+  <style>
+    .container1 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      /* Faz a imagem alinhar à esquerda */
+      background-color: #cbc3ce;
+      width: 1100px;
+      margin: 4% 23%;
+     
+
+    }
+
+    .imagem {
+      height: 250px;
+    }
+
+    .textonovidade {
+      text-align: left;
+      padding-right: 3%;
+      padding-left: 2%;
+      margin-top: -2%;
+      color: white;
+      font-size: 115%;
+      font-weight: lighter;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .textonovidade2 {
+      text-align: left;
+      padding-right: 5%;
+      padding-left: 4%;
+      margin-top: 2%;
+      color: white;
+      font-size: 115%;
+      font-weight: lighter;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+
+    .h1 {
+      color: white;
+      font-weight: bolder;
+      font-size: 130%;
+      margin-left: 4%;
+     
+    }
+
+    .h1walnut {
+      color: white;
+      font-weight: bolder;
+      font-size: 130%;
+      margin-left: 4%;
+      margin-top: 4%;
+     
+    }
+    .titulo{
+      margin-top: -3%;
+
+    }
+    .container {
+      display: flex;
+      /* Arrange elements in a row */
+      align-items: center;
+      /* Align items vertically */
+    }
+
+    .text {
+      flex-grow: 1;
+      /* Allow text to take remaining space */
+      margin-left: -700px;
+      margin-top: -300px;
+      line-height: 0.4;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+  <div>
+    <nav>
+    
+
+      <img src="./imagens/LogoNova.png" width="200" height="100" id="logo" style="margin-left: 13%">
+
+      <ul class="nav-list">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="vendas.html">VENDAS</a></li>
+        <li><a href="novidades.html">NOVIDADES</a></li>
+        <img onclick="sairConta()" src="./imagens/IconePerfil1.png" style="height: 7%; width: 7%; margin-left: 25%; margin-top: -2.5%;">
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+
+
+  <main>
+    <div class="container1">
+      <img class="imagem" src="./imagens/BaixosNovidades.png" alt="Your Image">
+
+      <p class="textonovidade">Agora na Solist Music não apenas vende guitarras, mas também vendemos baixos!
+        Adiquira já o seu modelo perfeito para tocar. Embreve venderemos tarrachas diferenciadas para dar
+        um toque a mais em seu instrumento!</p>
+    </div>
+
+
+
+    <div class="container1">
+      <img class="imagem" src="./imagens/PurpleNovidades.png" alt="Your Image">
+      <div class="titulo">
+        <h1 class="h1">DARK PURPLE BURSTS</h1>
+        <p class="textonovidade2">Os belos acabamentos Dark Purple Burst exclusivos da
+          Gibson estão agora disponíveis na ES-335, SG Modern
+          e Les Paul Modern Studio, bem como em outros modelos lançados anteriormente</p>
+      </div>
+    </div>
+
+    <div class="container1">
+     
+      <img class="imagem" src="./imagens/MulherNovidades.png" alt="Your Image">
+      <div class="titulo">
+      <h1 class="h1">SUA PRIMEIRA GUITARRA?</h1>
+      <p class="textonovidade2">Está tendo problemas em aprender a tocar ou ainda
+        não sabe como afinar seu instrumento, fique tranquilo
+        Clicando video ao lado, profissionais poderam te
+        ensinar com clareza todos os cuidados e atenções que
+        voce deverá ter.</p>
+    </div>
+    </div>
+    <div class="container1">
+      
+      <img class="imagem" src="./imagens/WalnutNovidades.png" alt="Your Image">
+
+      <div class="titulo">
+      <h1 class="h1walnut" >EXCLUSIVO GIBSON THE BEAUTY OF DARK WALNUT</h1>
+      <p class="textonovidade2">A Gibson tem o orgulho de lançar vários modelos
+      
+      favoritos dos jogadores com acabamento exclusivo
+      
+      Dark Walnut. Fazendo lembrar os acabamentos Walnut
+      utilizados em alguns modelos da década de 1970</p>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <img class="rodapenovidades" src="./imagens/RodaPé.png">
+  </footer>
+
+  <script>
+    function sairConta(){
+        window.location.href ="login.html"
+      }
+  </script>
+</body>
+
+</html>

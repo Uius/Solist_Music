@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solist</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-top: -200px;
+      color: white;
+     
+    }
+
+    .card {
+      background-color: #8E7F9C;
+      color: white;
+      border-radius: 35px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 2%;
+      margin: 2%;
+      text-align: center;
+      height: max-content;
+      width: max-content;
+      font-size: 110%;
+      
+
+    }
+    .cardtexto{
+      color: white;
+      font-weight: lighter;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 90%;
+    }
+    .link{
+      color: #42274B;
+      text-decoration: underline;
+      font-weight: bolder;
+    }
+    .link2{
+      color: #42274B;
+      text-decoration: underline;
+      font-weight: bolder;
+      margin-left: 41.3%;
+    }
+    .feed {
+      background-color: #8E7F9C;
+      padding: 0.5%;
+      text-align: center;
+      margin-bottom: 0%;
+      margin-top: 2%;
+      margin-left: 2.5%;
+      color: white;
+      width: 350px;
+      height: 50px;
+      font-size: 85%;
+      
+    }
+    .arrumando{
+      margin-top: 1%;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+
+    .image-container img {
+      width: 45%;
+    }
+
+    .button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color:white;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 50%;
+    }
+
+    .imagem-full {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      /* Ajusta a imagem para cobrir toda a área */
+    }
+
+    img {
+  max-width: 100%; /* A imagem não excederá a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+  </style>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./imagens/LogoNova.png"> 
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="./imagens/LogoNova.png" width="200" height="100" id="logo" style="margin-left: 13%">
+
+      <ul class="nav-list">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="vendas.html">VENDAS</a></li>
+        <li><a href="novidades.html">NOVIDADES</a></li>
+
+        <img onclick="sairConta()" src="./imagens/IconePerfil1.png" style="height: 7%; width: 7%; margin-left: 25%; margin-top: -2.5%;">
+
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <img src="./imagens/guitas.psd.svg" alt="Descrição da imagem" class="imagem-full">
+
+
+    <nav style=" background-color: #EAE6F3;">
+      <div>
+        <h1 class="centro">COMPRE DIVERSOS MODELOS!</h1>
+      </div>
+    </nav>
+
+    <div class="carousel-container">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+
+      <div class="carousel">
+        <div class="slide">
+          <img src="./imagens/Les PaulCarrosel.png" alt="Les Paul">
+          <p>Les Paul</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/TelecasterCarrosel.png" alt="Telecaster">
+          <p>Telecaster</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/ExplorerCarrosel.png" alt="Explorer">
+          <p>Explorer</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/Fly VCarrosel.png" alt="Flying V">
+          <p>Flying V</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/StratoCasterCarrosel.png" alt="Stratocaster">
+          <p>Stratocaster</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/MustangCarrosel.png" alt="Mustang">
+          <p>Mustang</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/JaguarCarrosel.png" alt="Jaguar">
+          <p>Jaguar</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/SemiCarrosel.png" alt="SemiAcustica">
+          <p>SemiAcustica</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/SGCarrosel.png" alt="SG">
+          <p>SG</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/WarlockCarrosel.png" alt="WarlockCarrosel">
+          <p>Warlock</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/FireBirdCarrosel.png" alt="FireBirdCarrosel">
+          <p>FireBird</p>
+        </div>
+        <div class="slide">
+          <img src="./imagens/L5SCarrosel.png" alt="L5S">
+          <p>L5S</p>
+        </div>
+      </div>
+
+      <button class="next" onclick="moveSlide(3)">&#10095;</button>
+    </div>
+
+    <div class="feed">
+      <h1 class="arrumando"> • F e e d N o t í c i a s</h1>
+    </div>
+
+    <div class="image-container">
+      <img src="./imagens/feed sg.svg" alt="Epiphone SG">
+      <img src="./imagens/feed jackson.png" alt="Jackson Concept Series">
+      
+    </div>
+    <a href="https://www.epiphone.com/en-US/p/Electric-Guitar/YUNGBLUD-SG-Junior/Classic-White?srsltid=AfmBOoojWAHtNRJ202PfTHpx434IzhcmrEUygF7rB0wIoTmQH3euIKr7" class="link">Clique aqui para mais</a>
+    <a href="https://www.jacksonguitars.com/en/search?q=limited+editio&lang=null" class="link2">Clique aqui para mais</a>
+    
+    <div class="container">
+      <div class="card">
+        <h2>Prazo de Entrega</h2>
+        <p class="cardtexto">Nossas entregas são sempre dentro do prazo previsto.</p>
+      </div>
+      <div class="card">
+        <h2>Preços Acessíveis</h2>
+        <p class="cardtexto">Temos guitarras com preços acessíveis para iniciantes.</p>
+      </div>
+      <div class="card">
+        <h2>Ótima Qualidade</h2>
+        <p class="cardtexto">Nossos produtos são de ótima qualidade e importados!</p>
+      </div>
+    </div>
+
+
+
+
+    <script src="./js/script.js">
+      
+    </script>
+
+  </main>
+
+  <footer>
+    <img class="rodapehome" src="./imagens/RodaPé.png">
+  </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
